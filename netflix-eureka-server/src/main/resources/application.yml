@@ -1,0 +1,16 @@
+spring:
+   application:
+      name: netflix-eureka-server
+      
+server:
+   port: ${PORT:8761}
+
+eureka:
+   instance:
+      hostname: localhost      
+   client:
+      registerWithEureka: false
+      fetchRegistry: false
+   server:
+      responseCacheUpdateIntervalMs: 2000
+      evictionIntervalTimerInMs: 2000
